@@ -1,0 +1,28 @@
+{
+  "name": "adaptive-tabs",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^9.1.12",
+    "@angular/core": "^9.1.12",
+    "@ng-bootstrap/ng-bootstrap": "^6.2.0",
+    "bootstrap": "^4.4.0",
+    "@angular/localize": "~9.1.11"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlokTakshak/ng-adaptive-tabs.git"
+  },
+  "author": "Alok Takshak",
+  "homepage": "https://github.com/AlokTakshak/ng-adaptive-tabs#README",
+  "bugs": {
+    "url": "https://github.com/AlokTakshak/ng-adaptive-tabs/issues"
+  },
+  "license": "ISC",
+  "keywords": [
+    "adaptive tabs",
+    "angular adaptive tabs"
+  ]
+}

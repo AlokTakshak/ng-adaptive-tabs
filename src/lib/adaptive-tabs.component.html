@@ -1,0 +1,19 @@
+<div class="adaptive-tabs-container" (click)="changeTabSelection($event)">
+    <div class="adaptive-tabs" #adaptive_tabs >
+        <div #tab class="adaptive-tabs-tab" *ngFor="let tab of tabs" [id]="tab.id"
+            [ngClass]="{'adaptive-tabs-tab-selected': activeTab === tab.id}"
+            [class.disabled]="tab.disabled ? tab.disabled : false">
+            <div class="adaptive-tabs-tab-title">{{tab.title}}</div>
+        </div>
+    </div>
+    <div *ngIf="showDropdown" ngbDropdown placement="bottom-right">
+        <div class="dropdown-handler" ngbDropdownToggle>more</div>
+        <div ngbDropdownMenu>
+            <button #dropdownTabs class="dropdown-buttons" ngbDropdownItem *ngFor="let tab of tabs"
+                [disabled]="tab.disabled ? tab.disabled : false" [id]="tab.id"
+                [ngClass]="{'dropdown-tab-selected': activeTab === tab.id}">
+                {{tab.title}}
+            </button>
+        </div>
+    </div>
+</div>
