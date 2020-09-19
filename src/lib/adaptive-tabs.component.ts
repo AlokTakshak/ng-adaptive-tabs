@@ -55,7 +55,7 @@ export class AdaptiveTabsComponent implements AfterViewInit {
   };
 
   @HostListener('window: resize')
-  private windowResize() {
+  public windowResize() {
     this.adaptTabs(this._adaptive_tabs_div.nativeElement.offsetWidth);
   }
 

@@ -2,6 +2,8 @@
 
 This library creates a tabs component which adjust automatically based on the screen size and shows overflowing tabs inside a dropdown.
 
+![demo](./demo.gif)
+
 ## Interface
 
 ```
@@ -43,7 +45,7 @@ app.component.html
 
 app.component.ts 
 
-tabs: AdaptiveTab = [ { titile: 'Tab-1' }, { titile: 'Tab-2' }]
+tabs: AdaptiveTab = [ { title: 'Tab-1' }, { title: 'Tab-2' }]
 
 public tabChanged(id: stirng) {
     console.log('selected tab id ', id);
