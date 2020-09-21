@@ -1,9 +1,9 @@
-[![npm version](https://img.shields.io/badge/npm-v0.0.1-blue?style=flat-square)](https://www.npmjs.com/package/adaptive-tabs)
+[![npm version](https://img.shields.io/badge/npm-v0.0.2-blue?style=flat-square)](https://www.npmjs.com/package/adaptive-tabs)
 
 # AdaptiveTabs 
 This library creates a tabs component which adjust automatically based on the screen size and shows overflowing tabs inside a dropdown.
 
-![demo](./demo.gif)
+![demo](https://raw.githubusercontent.com/AlokTakshak/ng-adaptive-tabs/master/demo.gif)
 
 ## Interface
 
@@ -53,3 +53,5 @@ public tabChanged(id: stirng) {
 }
 
 ```
+
+### `*Note` - Compiled with `enableIvy: false`

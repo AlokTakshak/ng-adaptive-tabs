@@ -120,6 +120,10 @@ export class AdaptiveTabsComponent implements AfterViewInit {
     }
   }
 
+  public trackByFn(_index: number, item: AdaptiveTab) {
+    return item.id;
+  }
+
   private removeClassFromTabs(tabs: ElementRef[], className = '--hidden') {
     tabs.forEach((tab) => {
       tab.nativeElement.classList.remove(className);
